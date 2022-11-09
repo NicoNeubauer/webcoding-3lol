@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Andre N. Poroject</title>
+  <!-- linking av style sheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+</head>
+<body>
+      <!-- titlen av alle siden , siden jeg bare byker synlig section og ikke andre elenter -->
+    <h1>Project 2</h1>
+      <!-- hvor javascripten legger til den generrete naven -->
+    <nav>
+        <ul>
+        </ul>
+    </nav>
+    <section>
+          <!-- første siden som bare er text -->
+        <section id="start-side" class="active">
+         <h2>Velkommen til mitt prosjekt 2</h2> 
+
+         <p> Dette er igjen en en Single Page Application, men litt forbedret fra forrige gang. 
+           Denne gangen ønsker vi at om en bruker laster siden på nytt så skal han/hun fortsette å være på samme side som når vedkommende trykket på reload.</p>
+          
+         <p> Dette er starten på et online kontaktregister, kontaktene lagres via
+         <a href=">http://folk.ntnu.no/oeivindk/imt1441/storage/">http://folk.ntnu.no/oeivindk/imt1441/storage/</a>.</p>
+          
+         <p>Siden “Søk kontakt” gir muligheten til å søke på kontakter mens”Legg til kontakt” benyttes for å legge til kontakter. </p> 
+          <div class=slideshow></div>
+               <!-- kunne også brukt en land p tag mere noen br -->
+        </section>        
+        <section id="kontaktListe"> <h2>Kontakter</h2>
+            <p>
+              </p>
+              <p><input type="text" id="search"></p>
+              <div id="studenter1">
+                <table>
+                    <thead>
+                        <th>First Name</th> <th>Last Name</th> <th>Email</th> <th>TLF</th> <th>Gate</th> <th>Postnummer</th> <th>Sted</th> 
+                    </thead>
+                    <tbody id="table1">
+                    </tbody>
+                </table> 
+                <p>søk og tryk på en kontakt for å redigere den </p>
+              <form onsubmit="javascript: return false">
+                <label for="input11">Fornavn  : </label>
+                    <input type="text" id=input11>
+                <br>
+                <label for="input21">Etternavn: </label>
+                    <input type="text" id=input21>
+                    <br>
+              <label for="input31">Epost      : </label>
+                  <input type="text" id=input31>
+                  <br>                      
+            <label for="input41">TLF          : </label>
+                <input type="text" id=input41>
+                <br>                      
+            <label for="input51">Gate          : </label>
+                <input type="text" id=input51>
+                <br>                      
+            <label for="input61">Postnummer          : </label>
+                <input type="text" id=input61>
+                <br>                      
+            <label for="input71">Sted          : </label>
+                <input type="text" id=input71>
+        </form>
+        <button id="editK">edit</button>
+        <div id=p2></div>
+        <div id="mapid"></div> 
+    </div>
+        </section>
+        <section id="kontaktSkjema">
+                <div>
+                          <!-- bruker (onsubmit="javascript: return false") for å ikke relode siden/forander link nor noen tryker enter eller på knapen -->
+                          <!-- bruker labels får og ha formane og texten på sname lije, har classe for og finne det enklere -->
+                          <h2>Leg til kontakter</h2>
+                        <form onsubmit="javascript: return false">
+                            <label for="input1">Fornavn  : </label>
+                                <input type="text" id=input1>
+                            <br>
+                            <label for="input2">Etternavn: </label>
+                                <input type="text" id=input2>
+                                <br>
+                          <label for="input3">Epost      : </label>
+                              <input type="text" id=input3>
+                              <br>                      
+                        <label for="input4">TLF          : </label>
+                            <input type="text" id=input4>
+                            <br>                      
+                            <label for="input5">Gate          : </label>
+                                <input type="text" id=input5>
+                                <br>                      
+                            <label for="input6">Postnummer          : </label>
+                                <input type="text" id=input6>
+                                <br>                      
+                            <label for="input7">Sted          : </label>
+                                <input type="text" id=input7>
+                        </form>
+                    </form>
+                    <button id="newK" >legg til</button>
+                </div>
+            </section>
+            <script src="js/menu1.js"></script>
+            <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+        <script src="js/map.js"></script>
+        </section>
+</body>

@@ -1,0 +1,102 @@
+/*mere til griden*/
+/* forandring av fonten til en mere lekende fornt for at jeg kan speile 
+meg mere i siden å for at den blir mere personlig */
+body{
+    display: grid;
+    grid-template-columns: auto 600px 200px auto;
+    grid-template-rows: 80px auto;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* griden som var brukte it laben for at det har same vanlig utsede som mål siden*/
+header{
+    grid-row: 1/1;
+    grid-column: 2/3;
+}
+nav{
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+body>section {
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+/* viktig for at siden funker som den skal*/
+/* hider og viser riktig sections */
+body>section>section{
+    display: none;
+}
+body>section>section.active{
+    display: block;
+}
+
+/* til nav bar-en , gjør at den ser ut som den skal */
+ul{
+    list-style: none;
+}
+li{
+    background: #eee;
+}
+
+
+li.active{
+    background: green;
+}
+nav ul{
+    margin: 5%;
+    padding: 0;
+    box-shadow: 5px 5px 5px green;
+}
+nav a{
+    padding: 12px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+nav a.active{
+    background-color: green;
+    color: white;
+}
+li:nth-child(4){
+    display: none;
+}
+/* for kalkolatorn , gjør at den ser mere rydig ut*/
+form{
+    padding: 1%
+}
+
+/* vanlig tabel styling til kasseliten*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px; 
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+/*bruker same farge som nav baren for å ha mere flytede design*/
+th{
+    background-color:green;
+    color: white ; 
+}
+nav a #EditSkjema{display: none;}
+
+.slideshow {
+    /* en DIV med denne klassen inneholder slideshowet.
+    */
+    position:relative;
+    width: 500px;
+    height: 500px;
+  }
+  
+#mapid {
+    height: 400px;
+    width: 400px;
+    outline: solid black 1px;
+  }

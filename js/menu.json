@@ -1,0 +1,17 @@
+[
+    {
+      "html": "Forside",
+      "id": "start-side",
+      "scriptsrc": "js/classes/slideshow.js"
+    },
+    {
+      "html": "Kontakt-Liste",
+      "id": "kontaktListe",
+      "scriptsrc": "js/kontaktListe.js"
+    },
+    {
+      "html": "Kontakt-Skjema",
+      "id": "kontaktSkjema",
+      "scriptsrc": "js/kontaktSkjema.js"
+    }
+  ]
